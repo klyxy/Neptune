@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-accent="blue">
+
+<!-- Head -->
+<head>
+    <title>Options</title>
+    <link rel="stylesheet" href="../css/options.css">
+</head>
+
+<!-- Body -->
+<body>
+    <!-- Top Bar -->
+    <header class="top-bar">
+        <div class="left-content">
+            <div class="icon">
+                <a href="https://learn.sowashco.org/">
+                    <img id="icon" src="../../images/icons/icon128.png" alt="Icon">
+                </a>
+            </div>
+
+            <!-- Divider -->
+            <div class="divider"></div>
+
+            <!-- Save -->
+            <button id="save">Save</button>
+            <label id="status" class="status">Data Saved Successfully!</label>
+            <label id="reset-status" class="reset-status">Data Reset Successfully!</label>
+        </div>
+
+        <div class="right-content">
+            <a id="version" href="#">Version &#8942;</a>
+        </div>
+    </header>
+ 
+    <!-- Version Menu -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+
+            <h2 id="version-header">Version</h2>
+            <ul>
+                <li id="build">?</li>
+                <li id="memory">?</li>
+
+                <button id="reset-data" class="reset-button">Reset Data</button>
+                <div id="reset-status"></div>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content Block -->
+    <div class="content-block">
+        <h1>Options</h1>
+
+        <!-- Theme Options-->
+        <h2>Theme</h2>
+
+        <!-- Theme -->
+        <label for="theme">Theme:</label>
+        <select id="theme">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+            <option value="midnight">Midnight</option>
+            <option value="vaporwave">Vaporwave</option>
+            <option value="wumpus">Wumpus</option>
+            <option value="nightowl">Night Owl</option>
+            <option value="navy">Navy</option>
+        </select>
+        <br>
+
+        <!-- Accent -->
+        <label for="accent">Accent Color:</label>
+        <select id="accent">
+            <option value="blue">Blue</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+            <option value="purple">Purple</option>
+            <option value="orange">Orange</option>
+            <option value="pink">Pink</option>
+            <option value="wumpus">Wumpus</option>
+        </select>
+        <br>
+
+        <!-- Logo -->
+        <label for="logo">Logo:</label>
+        <select id="logo">
+            <option value="default">Default</option>
+            <option value="hide">Hide</option>
+            <option value="remove">Remove</option>
+        </select>
+
+        <!-- Legacy -->
+        <div class="checkbox-container">
+            <label for="legacy">Legacy Mode:</label>
+            <input type="checkbox" id="legacy" />
+            <label for="legacy" class="slider"></label>
+            <span class="warning">Not Recommended</span>
+        </div>
+
+        <!-- Quality of Life Options -->
+        <h2>Quality of Life</h2>
+
+        <!-- Grade Display -->
+        <label for="grade">Grade Display:</label>
+        <select id="grade">
+            <option value="default">Default</option>
+            <option value="advanced">Advanced</option>
+        </select>
+
+
+        <!-- Remove Profile Picture -->
+        <div class="checkbox-container">
+            <label for="profile">Remove Profile Picture:</label>
+            <input type="checkbox" id="profile" />
+            <label for="profile" class="slider"></label>
+        </div>
+
+        <!-- Autoload Recently Completed -->
+        <div class="checkbox-container">
+            <label for="recent">Autoload Recently Completed:</label>
+            <input type="checkbox" id="recent" />
+            <label for="recent" class="slider"></label>
+        </div>
+
+        <!-- Auto Enable Spell-Check -->
+        <div class="checkbox-container">
+            <label for="spell-check">Auto Enable Spell-Check:</label>
+            <input type="checkbox" id="spell-check" />
+            <label for="spell-check" class="slider"></label>
+        </div>
+
+        <!-- Preferred Name Options-->
+        <h2>Preferred Name</h2>
+
+        <!-- First Name -->
+        <div class="textbox-container">
+            <label for="firstName">First Name:</label>
+            <input maxlength="25" minlength="1" id="firstName" type="text">
+        </div>
+        <br>
+
+        <!-- Middle Name -->
+        <div class="textbox-container" style="display:none">
+            <label for="middleName">Middle Name:</label>
+            <input maxlength="25" minlength="1" id="middleName" type="text">
+        </div>
+
+        <!-- Last Name -->
+        <div class="textbox-container">
+            <label for="lastName">Last Name:</label>
+            <input maxlength="25" minlength="1" id="lastName" type="text">
+        </div>
+    </div>
+
+    <!-- Options Script -->
+    <script src="../js/options.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "Neptune",
+  "description": "Adds customization and quality of life options to Schoology",
+  "version": "4.3.25",
+  "version_name": "3.8",
+  "permissions": [
+    "notifications",
+    "storage",
+    "activeTab"
+  ],
+  "icons": {
+    "32": "images/icons/icon32.png",
+    "48": "images/icons/icon48.png",
+    "128": "images/icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "scripts/*",
+        "scripts/*/*",
+        "scripts/*/*/*",
+        "scripts/*/*/*/*",
+        "images/*",
+        "images/*/*",
+        "images/*/*/*"
+      ],
+      "matches": [
+        "https://learn.sowashco.org/*"
+      ]
+    }
+  ],
+  "options_page": "scripts/html/options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://learn.sowashco.org/*"
+      ],
+      "css": [
+        "scripts/css/style.css"
+      ],
+      "js": [
+        "scripts/js/content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
