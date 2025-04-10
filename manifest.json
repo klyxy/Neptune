@@ -3,7 +3,7 @@
   "name": "Neptune",
   "description": "Adds customization and quality-of-life features to personalize Schoology.",
   "version": "1.0.0",
-  "permissions": ["notifications", "storage"],
+  "permissions": ["storage"],
   "icons": {
     "32": "images/icons/icon32.png",
     "48": "images/icons/icon48.png",
