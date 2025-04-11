@@ -275,7 +275,7 @@ window.addEventListener("DOMContentLoaded", () => {
             let a = Neptune.querySelector("a"); // <a>
             a.style = "color: #d8a1f7 !important; text-transform: none !important";
             a.href = chrome.runtime.getURL("scripts/html/options.html");
-            a.textContent = ("Neptune " + manifest.version_name);
+            a.textContent = ("Neptune " + manifest.version);
 
             support.parentElement.appendChild(Neptune);
         }

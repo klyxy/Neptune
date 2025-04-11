@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Version Button
     if (version) {
-        version.textContent = `Version ${manifest.version_name}`;
+        version.textContent = `Version ${manifest.version}`;
 
         // Modal Open (Click)
         version.addEventListener("click", function () {
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Version Header
     if (versionHeader) {
-        versionHeader.textContent = `Version ${manifest.version_name}`;
+        versionHeader.textContent = `Version ${manifest.version}`;
     } else {
         console.error("Missing: versionHeader")
     }
